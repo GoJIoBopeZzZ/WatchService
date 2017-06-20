@@ -8,15 +8,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        
         Path myPath =
                 Paths.get("/Users/_red_/IdeaProjects/NewInputOutput/src/com/red/innopolis/test.txt");
-    
+
         try {
             List<String> content = Files.readAllLines(myPath);
             System.out.println(content);
         } catch (Exception e) {}
-    
+
         try {
             BufferedWriter bw = Files.newBufferedWriter(myPath,
                     StandardCharsets.UTF_8,

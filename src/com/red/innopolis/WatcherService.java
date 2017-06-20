@@ -16,7 +16,7 @@ public class WatcherService {
             try {
                 WatchService watcher = FileSystems.getDefault().newWatchService();
         
-                Path directory = Paths.get("/Users/_red_/IdeaProjects/NewInputOutput/src/com/red/innopolis");
+                Path directory = Paths.get("/Users/_red_/IdeaProjects/WatchService/src/com/red/innopolis");
                 try {
                     WatchKey key = directory.register(watcher, ENTRY_MODIFY);
                     while (true) {
